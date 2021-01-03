@@ -1,6 +1,6 @@
 const User = require("../../models/userModel.js");
 
-const createnewUser = () => 
+const createnewUser = async () => 
 {
     const account = 
     {
