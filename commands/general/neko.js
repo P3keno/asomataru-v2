@@ -1,6 +1,6 @@
 module.exports = {
-    name: "anime",
-    aliases: ['waifu'],
+    name: "neko",
+    aliases: [],
     permissions: [],
     ownerOnly: false,
     enabled: true,
@@ -24,10 +24,10 @@ module.exports = {
        const superagent = require('superagent');
        
         let { body } = await superagent
-        .get('https://nekos.life/api/v2/img/waifu');
+        .get('https://nekos.life/api/v2/img/neko');
 
         const embed = new Discord.MessageEmbed()
-        .setTitle(`**Here is an waifu! OwO`)
+        .setTitle(`**Here is a neko! UwU`)
         .setImage(body.url)
         .setFooter('Powered by nekos.life')
 
