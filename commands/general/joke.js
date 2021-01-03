@@ -36,7 +36,7 @@ module.exports = {
         message.channel.send(response).then().catch(console.error);
         */
        const Discord = require('discord.js');
-       const superagent = ('superagent');
+       const superagent = require('superagent');
 
        let { body } = await superagent
        .get('https://v2.jokeapi.dev/joke/Any?safe-mode&type=single');
