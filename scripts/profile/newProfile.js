@@ -1,5 +1,4 @@
-const Discord = require('discord.js');
-const User = require("../../models/userModel");
+const User = require("../../models/userModel.js");
 
 const userData = async(message) => {
     let data = User.findOne({userID: message.author.id});
