@@ -10,7 +10,7 @@ module.exports = {
         const superagent = require('superagent');
 
         let {body} = await superagent
-        .get("https://dog.ceo/api/breeds/image/random");
+        .get("https://random.dog/woof.json");
 
         const embed = new Discord.MessageEmbed()
         .setTitle (`**__Who is a good cuddly kitten!__**`)
