@@ -7,7 +7,6 @@ module.exports = {
     cooldown: 0,
     exec: async (client, message, args) => {
       const { userData } = require('../../scripts/profile/newProfile.js')
-      //const User = require('../../models/userModel.js');
       const Discord = require('discord.js');
 
       let member = message.guild.member(message.mentions.users.first() || message.author)
@@ -16,16 +15,16 @@ module.exports = {
   
       const userStats = [
         `Balance: ${userData.coins} Coins`,
-        `HP: ${data.hp} Health`,
-        `Level: ${data.level}`,
-        `XP: ${data.xp} XP`,
-        `XP to Level Up: ${data.xptoNextLevel}`,
+        `HP: ${userData.hp} Health`,
+        `Level: ${userData.level}`,
+        `XP: ${userData.xp} XP`,
+        `XP to Level Up: ${userData.xptoNextLevel}`,
         ` `,
         `**Fish**`,
-        `Salmon: ${data.fish.salmon}`,
-        `Bass: ${data.fish.bass}`,
-        `Eels: ${data.fish.eel}`,
-        `Pufferfish: ${data.fish.pufferfish}`
+        `Salmon: ${userData.fish.salmon}`,
+        `Bass: ${userData.fish.bass}`,
+        `Eels: ${userData.fish.eel}`,
+        `Pufferfish: ${userData.fish.pufferfish}`
       ]
       
 
