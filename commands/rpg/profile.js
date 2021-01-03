@@ -21,7 +21,7 @@ module.exports = {
         `XP to Level Up: ${userData.xptoNextLevel}`,
         ` `,
         `**Fish**`,
-        `Salmon: ${userData.fish.salmon}`,
+        `Salmon: ${userData.data.fish.salmon}`,
         `Bass: ${userData.fish.bass}`,
         `Eels: ${userData.fish.eel}`,
         `Pufferfish: ${userData.fish.pufferfish}`
