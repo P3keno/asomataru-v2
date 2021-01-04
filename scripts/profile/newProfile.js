@@ -12,11 +12,13 @@ const createnewUser = async () =>
     newUser.save();
 };
 
+const userProfile = async() => {
 let userProfile = await User.findOne({"account.userID": message.author.id});
 
 if(!userProfile) {
     userProfile = await createnewUser();
-} 
+}
+}; 
 
 module.exports = { userProfile, createnewUser };
 /*const userData = async(message) => {
