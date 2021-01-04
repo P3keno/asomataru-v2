@@ -20,7 +20,7 @@ if(!userProfile) {
 }
 }; 
 
-module.exports = { userProfile, createnewUser };
+module.exports = { userProfile };
 /*const userData = async(message) => {
     let data = await User.findOne({userID: message.author.id});
     if(!data) {
